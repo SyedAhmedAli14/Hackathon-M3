@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <section id="formSection">
+        <h2>Resume Builder Form</h2>
+        <form id="resumeForm">
+            <h3>Personal Information</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">Contact:</label>
+            <input type="text" id="phone" name="phone" required><br>
+
+            <label for="profilePic">Profile Picture:</label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*"><br>
+
+            <h3>Education</h3>
+            <label for="matric">Matriculation:</label>
+            <input type="text" id="matric" name="matric" required><br>
+
+            <label for="inter">Intermediate:</label>
+            <input type="text" id="inter" name="inter" required><br>
+
+            <label for="grad">Graduation:</label>
+            <input type="text" id="grad" name="grad" required><br>
+
+            <h3>Skills</h3>
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" name="skills" required><br>
+
+            <h3>Work Experience</h3>
+            <label for="experience1">Experience 1:</label>
+            <input type="text" id="experience1" name="experience1" required><br>
+
+            <label for="experience2">Experience 2:</label>
+            <input type="text" id="experience2" name="experience2" required><br>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </section>
+
+    <section id="resumeSection">
+        <h2>Generated Resume</h2>
+        <div id="generatedResume">
+            <div id="ContactDetails">
+                <h3>Personal Details</h3>
+                <ul></ul>
+            </div>
+            <div id="Education">
+                <h3>Education</h3>
+                <ul></ul>
+            </div>
+            <div id="skills">
+                <h3>Skills</h3>
+                <button id="toggleButton">Toggle</button>
+                <ul id="skillsList"></ul>
+            </div>
+            <div id="experience">
+                <h3>Work Experience</h3>
+                <ul></ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
